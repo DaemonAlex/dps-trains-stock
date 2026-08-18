@@ -1,6 +1,6 @@
 # dps-trains-stock
 
-Rolling stock for the Del Perro Sands railway: the BigDaddy "Trains
+Rolling stock for the Del Perro Sands railway:  "Trains
 Overhauled" models, audio, and consist definitions. Deliberately stripped to
 assets only - the pack's C# scripts, ticket system, and gta5.meta are
 excluded; scheduling and behavior belong to `dps-trains`.
