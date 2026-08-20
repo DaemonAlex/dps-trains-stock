@@ -11,20 +11,21 @@
 
 <!-- PASSENGER CONSISTS -->
 	<train_config name = "passenger_config01" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "false" no_random_spawn = "false" carriage_gap = "-0.2">
-		<!-- DPS: engine + 3. Was 9 cars, which is an eight-coach express for a
-		     handful of players. 3 coaches still seat ~24-30 (attach-seating
-		     has no hard cap; the limit is riders overlapping) and 21 ambient
-		     NPCs at 7 per coach. -->
-		<carriage model_name = "streakcoaster" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
-		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "3" />
+		<!-- DPS: matched coaster set - coaster loco, coaster coaches and a coaster
+		     cab car, instead of a coaster loco pulling generic streakc
+		     coaches. Also cheaper: streakcoasterc is 10 MB to streakc's 16.
+		     Ride heights are the pack's own values, 1.64 loco / 1.76 stock. -->
+		<carriage model_name = "streakcoaster" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.64" repeat_count = "1" />
+		<carriage model_name = "streakcoasterc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "2" />
+		<carriage model_name = "streakcoastercab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "1" />
 	</train_config>
 
 	<train_config name = "passenger_config02" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "false" no_random_spawn = "false" carriage_gap = "-0.2">
-		<!-- DPS: engine + 3, keeping the cab car on the tail so the Brown Streak
-		     still reads as a proper set rather than a cut-off train. -->
+		<!-- DPS: engine + 3 with the cab car on the tail. Already a matched set;
+		     ride heights corrected to the pack's 1.76 for coaches and cab. -->
 		<carriage model_name = "streak" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
-		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "2" />
-		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
+		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "2" />
+		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "1" />
 	</train_config>
 
 <!-- FREIGHT CONSISTS	 -->
