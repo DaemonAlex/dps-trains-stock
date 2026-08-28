@@ -11,35 +11,25 @@
 
 <!-- PASSENGER CONSISTS -->
 	<train_config name = "passenger_config01" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "false" no_random_spawn = "false" carriage_gap = "-0.2">
-		<!-- DPS: engine + 3. Was 9 cars, which is an eight-coach express for a
-		     handful of players. 3 coaches still seat ~24-30 (attach-seating
-		     has no hard cap; the limit is riders overlapping) and 21 ambient
-		     NPCs at 7 per coach. -->
-		<carriage model_name = "streakcoaster" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
-		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "3" />
+		<!-- Axsellya Express: blue throughout. -->
+		<carriage model_name = "streakcoaster" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.64" repeat_count = "1" />
+		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "2" />
+		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "1" />
 	</train_config>
 
 	<train_config name = "passenger_config02" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "false" no_random_spawn = "false" carriage_gap = "-0.2">
-		<!-- DPS: engine + 3, keeping the cab car on the tail so the Brown Streak
-		     still reads as a proper set rather than a cut-off train. -->
+		<!-- Brown Streak: brown engine, brown carriages. streakcoastercab is the
+		     brown coach - use it for every carriage. streakc and
+		     streakcoasterc are both blue, whatever the names imply. -->
 		<carriage model_name = "streak" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
-		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "2" />
-		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
+		<carriage model_name = "streakcoastercab" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "3" />
 	</train_config>
 
 <!-- FREIGHT CONSISTS	 -->
 	<train_config name = "freight_config01" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "false" no_random_spawn = "false" carriage_gap = "-0.2">
-		<!-- DPS: 9 cars from 6 models. Texture memory is charged per UNIQUE
-		     model, not per carriage - the passenger consists are cheap because
-		     they repeat streakc eight times. The stock version of this config
-		     was 9 cars of 9 different models and cost 399 MB on its own; this
-		     is ~104 MB and still shows six distinct car types.
-		     Offsets are the values this file already used per model. -->
+		<!-- Unused - the mainline runs the two passenger consists only. -->
 		<carriage model_name = "sd70mac" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
 		<carriage model_name = "freightflat" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.55" repeat_count = "2" />
-		<carriage model_name = "freightflatlogs" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.55" repeat_count = "2" />
-		<carriage model_name = "freighttanklong" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.55" repeat_count = "2" />
-		<carriage model_name = "freightgondola" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
 		<carriage model_name = "freightcaboose" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
 	</train_config>
 
