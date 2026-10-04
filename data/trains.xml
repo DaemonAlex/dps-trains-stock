@@ -62,7 +62,7 @@
 	<train_config name = "rox_passenger_config01" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "true" carriage_gap = "0.1">
 		<!-- Roxwood's own passenger set (amb_statrac_config_1 in amb-roxwood-trains), same carriage order and offsets.
 		     The models are escrowed and stream from amb-roxwood-trains; this only references them by name.
-		     Added 2026-09-15 for the regional passenger service (mainline track 0). Game variation 33. -->
+		     Added 2026-09-15 for the regional passenger service (mainline track 0). Game variation 32 (vanilla 0-27, then 28-31 above). -->
 		<carriage model_name = "amb_statrac_loc" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
 		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "3" />
 		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "1" />
