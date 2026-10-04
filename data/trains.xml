@@ -49,8 +49,23 @@
 
 <!-- METRO/SUBWAY CONSISTS -->
 	<train_config name = "metro_config01" populate_train_dist = "40.0" announce_stations = "true" doors_beep = "true" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "true" carriage_gap = "-0.5">
+		<!-- DPS 2026-09-21: single car. The second (flipped) metrotrain was the
+		     car that slammed into the first at the LS end of the Roxwood shuttle,
+		     throwing riders out. One car has nothing to collide with, and a
+		     metrotrain is double-ended so it still looks right running back.
+		     Restore the second <carriage> line below to go back to a two-car set. -->
 		<carriage 	model_name = "metrotrain" 	max_peds_per_carriage = "4" 	flip_model_dir = "false" 	do_interior_lights = "true" 	carriage_vert_offset = "0.4" repeat_count = "1" />
-		<carriage 	model_name = "metrotrain" 	max_peds_per_carriage = "4" 	flip_model_dir = "true" 	do_interior_lights = "true" 	carriage_vert_offset = "0.4" repeat_count = "1" />
+	</train_config>
+
+
+<!-- ROXWOOD REGIONAL PASSENGER -->
+	<train_config name = "rox_passenger_config01" populate_train_dist = "40.0" announce_stations = "false" doors_beep = "false" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "true" carriage_gap = "0.1">
+		<!-- Roxwood's own passenger set (amb_statrac_config_1 in amb-roxwood-trains), same carriage order and offsets.
+		     The models are escrowed and stream from amb-roxwood-trains; this only references them by name.
+		     Added 2026-09-15 for the regional passenger service (mainline track 0). Game variation 33. -->
+		<carriage model_name = "amb_statrac_loc" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.65" repeat_count = "1" />
+		<carriage model_name = "streakc" max_peds_per_carriage = "7" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "3" />
+		<carriage model_name = "streakcab" max_peds_per_carriage = "0" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "1.76" repeat_count = "1" />
 	</train_config>
 
 
