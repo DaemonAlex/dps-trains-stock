@@ -74,6 +74,16 @@
 -->
 
 		
+	<train_config name = "lrt_config01" populate_train_dist = "40.0" announce_stations = "true" doors_beep = "true" carriages_hang = "false" carriages_swing = "false" link_tracks_with_adjacent_stations = "true" carriage_gap = "-2.24">
+		<!-- DPS 2026-10-29 (Damon: a nicer light-rail train): Bombardier Flexity Freedom tram, SCPDUnit23's Metrolinx LRT v1.1, five-car set
+		     (the vendor's metro_config1). Models stream from [vehicles]/elrt-tram. Game variation 33 on build 3095 (vanilla 0-27 + the five above). -->
+		<carriage model_name = "elrtcab" max_peds_per_carriage = "1" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "0.45" repeat_count = "1" />
+		<carriage model_name = "elrtpassenger" max_peds_per_carriage = "1" flip_model_dir = "true" do_interior_lights = "true" carriage_vert_offset = "0.45" repeat_count = "1" />
+		<carriage model_name = "elrtmiddle" max_peds_per_carriage = "1" flip_model_dir = "false" do_interior_lights = "true" carriage_vert_offset = "0.45" repeat_count = "1" />
+		<carriage model_name = "elrtpassenger" max_peds_per_carriage = "1" flip_model_dir = "true" do_interior_lights = "true" carriage_vert_offset = "0.45" repeat_count = "1" />
+		<carriage model_name = "elrtcabrear" max_peds_per_carriage = "1" flip_model_dir = "true" do_interior_lights = "true" carriage_vert_offset = "0.45" repeat_count = "1" />
+	</train_config>
+
 	<train_config_group name = "passenger_group">
 		<train_config_ref name = "passenger_config01" />
 		<train_config_ref name = "passenger_config02" />
